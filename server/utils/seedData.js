@@ -1,0 +1,222 @@
+export const initialLocationZones = [
+  { id: 'loc-curr', cityName: 'Bhotia Parao (Current Location)', zoneName: 'Near Nainital Bank, Haldwani', pincode: '263139', deliveryFee: 20, minOrderValue: 100, estimatedTime: '15-20 min', isActive: true, lat: 29.2183, lng: 79.5130 },
+  { id: 'loc-1', cityName: 'Haldwani Central', zoneName: 'Haldwani Main Market', pincode: '263139', deliveryFee: 30, minOrderValue: 150, estimatedTime: '20-25 min', isActive: true, lat: 29.2183, lng: 79.5130 },
+  { id: 'loc-2', cityName: 'Kathgodam', zoneName: 'Kathgodam Railway', pincode: '263126', deliveryFee: 35, minOrderValue: 200, estimatedTime: '25-30 min', isActive: true, lat: 29.2727, lng: 79.5247 },
+  { id: 'loc-3', cityName: 'Rudrapur', zoneName: 'Rudrapur Industrial', pincode: '263153', deliveryFee: 45, minOrderValue: 250, estimatedTime: '35-40 min', isActive: true, lat: 28.9740, lng: 79.3990 },
+  { id: 'loc-4', cityName: 'Lalkuan', zoneName: 'Lalkuan Town', pincode: '263139', deliveryFee: 40, minOrderValue: 200, estimatedTime: '30-35 min', isActive: true, lat: 29.1073, lng: 79.5289 },
+  { id: 'loc-5', cityName: 'Nainital', zoneName: 'Nainital Lake Area', pincode: '263001', deliveryFee: 60, minOrderValue: 300, estimatedTime: '45-50 min', isActive: true, lat: 29.3803, lng: 79.4636 },
+];
+
+export const initialFoodItems = [
+  {
+    id: 'food-1',
+    name: 'Zomato Special Butter Chicken',
+    category: 'Main Course',
+    description: 'Tender chicken pieces simmered in a rich, buttery tomato cream gravy with aromatic spices.',
+    price: 280,
+    isVeg: false,
+    rating: 4.8,
+    prepTime: '25 mins',
+    spicyLevel: 'Medium',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
+    tags: ['Bestseller', 'Chef Special'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-2',
+    name: 'Kumaoni Aloo Ke Gutke',
+    category: 'Main Course',
+    description: 'Traditional Uttarakhand dish of spiced boiled potatoes tempered with mustard oil, jakhiya seeds, and red chilies.',
+    price: 150,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '15 mins',
+    spicyLevel: 'Spicy',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    tags: ['Kumaoni Special', 'Must Try'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-3',
+    name: 'Truffle & Mushroom Artisan Pizza',
+    category: 'Pizza',
+    description: 'Hand-tossed sourdough pizza topped with wild mushrooms, black truffle oil, and mozzarella.',
+    price: 390,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '20 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
+    tags: ['Gourmet', 'Popular'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-4',
+    name: 'Classic Paneer Tikka Platter',
+    category: 'Starters',
+    description: 'Chargrilled cottage cheese marinated in hung curd, Kashmiri chili, and traditional spices.',
+    price: 220,
+    isVeg: true,
+    rating: 4.7,
+    prepTime: '15 mins',
+    spicyLevel: 'Spicy',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
+    tags: ['Popular'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-5',
+    name: 'Smoky Double Cheese Burger',
+    category: 'Burgers',
+    description: 'Juicy grilled patty topped with double smoked cheddar, caramelized onions, and house barbecue sauce.',
+    price: 250,
+    isVeg: false,
+    rating: 4.6,
+    prepTime: '20 mins',
+    spicyLevel: 'Medium',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    tags: ['Trending'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3']
+  },
+  {
+    id: 'food-6',
+    name: 'Bal Mithai & Singori Dessert Box',
+    category: 'Desserts',
+    description: 'Traditional Kumaoni sweets - rich chocolate-like Bal Mithai and coconut-wrapped Singori from Almora.',
+    price: 180,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '10 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
+    tags: ['Kumaoni Special', 'Dessert Lover'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-7',
+    name: 'Dal Makhani Royal Supreme',
+    category: 'Main Course',
+    description: 'Slow-cooked black lentils simmered overnight with white butter, cream, and subtle smoked spices.',
+    price: 240,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '20 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
+    tags: ['Bestseller', 'North Indian'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-8',
+    name: 'Dragon Fire Pepperoni Pizza',
+    category: 'Pizza',
+    description: 'Crispy artisan crust loaded with spicy pepperoni, sliced jalapenos, red chili flakes, and triple cheese blend.',
+    price: 420,
+    isVeg: false,
+    rating: 4.8,
+    prepTime: '20 mins',
+    spicyLevel: 'Extra Hot',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80',
+    tags: ['Chef Special', 'Spicy Choice'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-9',
+    name: 'Norwegian Salmon & Avocado Sushi',
+    category: 'Sushi',
+    description: 'Premium fresh salmon roll filled with ripe avocado, cucumber, Japanese sesame, and ponzu drizzle.',
+    price: 480,
+    isVeg: false,
+    rating: 4.9,
+    prepTime: '25 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80',
+    tags: ['Gourmet', 'Chef Special'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-10',
+    name: 'Truffle Edamame Crystal Dim Sum',
+    category: 'Starters',
+    description: 'Handcrafted translucent dumplings filled with edamame puree, shiitake mushrooms, and black truffle essence.',
+    price: 290,
+    isVeg: true,
+    rating: 4.7,
+    prepTime: '15 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80',
+    tags: ['New', 'Asian Fusion'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-11',
+    name: 'Kumaoni Bhatt Ki Churkani',
+    category: 'Main Course',
+    description: 'Authentic Pahadi black soybean curry simmered with roasted wheat flour and traditional Himalayan spices.',
+    price: 170,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '20 mins',
+    spicyLevel: 'Medium',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80',
+    tags: ['Kumaoni Special', 'Healthy'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  },
+  {
+    id: 'food-12',
+    name: '3D Chocolate Sphere Lava Delight',
+    category: 'Desserts',
+    description: 'Belgian dark chocolate dome melted with hot salted caramel, exposing warm molten lava cake and vanilla gelato.',
+    price: 260,
+    isVeg: true,
+    rating: 4.9,
+    prepTime: '12 mins',
+    spicyLevel: 'Mild',
+    isAvailable: true,
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
+    tags: ['3D Signature', 'Dessert Lover'],
+    locationIds: ['loc-curr', 'loc-1', 'loc-2', 'loc-3', 'loc-4', 'loc-5']
+  }
+];
+
+export const initialUsers = [
+  { id: 'usr-admin', name: 'Zomato Admin', email: 'admin@zomato.com', password: 'admin', role: 'admin' },
+  { id: 'usr-cust', name: 'Manish Parihar', email: 'customer@zomato.com', password: 'user', role: 'customer', phone: '+91 9876543210', addresses: ['Bhotia Parao, Haldwani, Uttarakhand'] }
+];
+
+export const initialOrders = [
+  {
+    id: 'ORD-9821',
+    customerName: 'Manish Parihar',
+    customerEmail: 'customer@zomato.com',
+    customerPhone: '+91 9876543210',
+    address: 'Bhotia Parao, Near Nainital Bank, Haldwani, Uttarakhand 263139',
+    cityName: 'Bhotia Parao (Current Location)',
+    lat: 29.2183,
+    lng: 79.5130,
+    items: [
+      { id: 'food-1', name: 'Zomato Special Butter Chicken', price: 280, quantity: 1, image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80' },
+      { id: 'food-6', name: 'Bal Mithai & Singori Dessert Box', price: 180, quantity: 1, image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80' }
+    ],
+    subtotal: 460,
+    deliveryFee: 20,
+    totalAmount: 480,
+    paymentMethod: 'UPI (Google Pay)',
+    paymentStatus: 'Paid',
+    txnId: 'TXN-98421034',
+    orderStatus: 'Preparing',
+    createdAt: new Date().toISOString()
+  }
+];
+
